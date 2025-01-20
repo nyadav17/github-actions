@@ -24,7 +24,6 @@ jobs:
     runs-on: mac-latest
     steps:
       - name: Show OS
-        shell: bash
         run: |
           echo "This job is running on Mac runner"
           echo "Runner OS: ${{runner.os}}"
