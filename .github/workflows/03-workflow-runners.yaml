@@ -9,7 +9,7 @@ jobs:
         shell: bash
         run: |
           echo "This job is running on Ubuntu runner"
-          echo "Runner OS: $Runner_OS"
+          echo "Runner OS: ${{runner.os}}"
 
   window-echo:
     runs-on: windows-latest
@@ -18,7 +18,7 @@ jobs:
         shell: bash
         run: |
           echo "This job is running on Windows runner"
-          echo "Runner OS: $Runner_OS"
+          echo "Runner OS: ${{runner.os}}"
 
   mac-echo:
     runs-on: windows-latest
@@ -27,4 +27,4 @@ jobs:
         shell: bash
         run: |
           echo "This job is running on Mac runner"
-          echo "Runner OS: $Runner_OS"
+          echo "Runner OS: ${{runner.os}}"
