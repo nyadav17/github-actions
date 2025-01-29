@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      "use strict";
+      //let a = 34;
+      let a = "This is me";
+      console.log(a);
+      function hello() {
+        console.log("Hello World");
+      }
+      let obj = {
+        r: 34,
+        m: 64,
+        func: function myFunc(number) {
+          console.log("The Number is:" + number);
+        },
+      };
+      document.addEventListener("click", function () {
+        console.log("Clicking the document");
+        //alert("Clicked!");
+        let conf = confirm("Are you sure?");
+        console.log(conf);
+        console.log(this);
+      });
+
+      let arr = [34, 23, 24];
+      arr.forEach((element) => {
+        console.log(element);
+        console.log(this);
+      });
+
+      let myFunc2 = function (number) {
+        console.log("The Number is:" + number);
+        console.log(this);
+      };
+
+      myFunc2(5);
+
+      setTimeout(() => {
+        console.log("Set Timeout Invoked");
+      }, 2000);
+      console.log(this);
+    </script>
+  </head>
+  <body>
+    <h1>I am learning JS</h1>
+  </body>
+</html>
